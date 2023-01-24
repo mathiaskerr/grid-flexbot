@@ -1,0 +1,190 @@
+body {
+  font-family: sans-serif;
+}
+
+header {
+  height: 4rem;
+  background-color: #4584b1;
+  color: #fff;
+  font-size: 2rem;
+  display:flex;
+  align-items: center;
+  
+}
+
+#logo {
+  margin-left: 40px;
+  /* The logo element has an id of logo */
+  /* Give the logo element a left margin of 40px */
+}
+
+nav {
+  background-color: #103594;
+  height: 3.5rem;
+  display: flex ;
+  align-items: center;
+  /* Use rem units to give the nav an appropriate height */
+  /* Use flexbox to vertially align the nav child elements in the center */
+}
+
+nav ul {
+  display:flex ;
+
+  
+  /* Use flexbox to layout the li elements horizontally */
+}
+nav > ul> li {
+  color: transparent;
+  padding-right: 15px;
+}
+nav > ul> li > a{
+  color: #fff;
+  text-decoration: none;
+  
+}
+nav > ul > li > a:hover{
+  text-decoration: underline;
+}
+
+.where-togo {
+  background-color: #040E27;
+  padding-top: 1px;
+
+}
+.where-togo >h3 {
+  color: #fff;
+  font-size: 2rem;
+
+  
+}
+.search-form{
+  display:flex;
+}
+.input-field{
+  margin: 3px;
+}
+/* Notice that each form input is wrapped in a div */
+/* Create a block that targets the input-field class and apply a suitable width and margin */
+
+
+/* Styling the elements of Forms is difficult. */
+/* Hint: https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling */
+
+input {
+  padding-left: 5px;
+  width: 175px;
+  height: 30px;
+  border-radius: 5px;
+  justify-content: start;
+  /* Style the form input elements using width, height, padding-left and border-radius */
+}
+
+.nice-select {
+  width: 175px;
+  height: 35px;
+  border-radius: 5px;
+  /* Select elements are not imput elements! Therefore we've given the <select> element it's own class  */
+  /* They are notoriously difficult to style with css */
+  /* In this case you can use width, height, font-size, color, border and border-radius */
+}
+
+.search-btn {
+  background: rgb(233, 43, 43);
+  border-radius: 5px;
+  color: #fff;
+  border: rgb(233, 43, 43);
+  height:35px;
+  width: 80px;
+  cursor:default ;
+
+
+}
+
+.container {
+  display:grid;
+  justify-content: space-between
+  /* The destinations are enclosed in an article element that we want to make a grid */
+  /* Set the display property to 'grid' and justify the content */
+}
+
+.row {
+  grid-template-columns: 30% 30% 30%;
+
+  /* The row of the grid has 3 columns which should be the same width and roughly a third of the available space */
+  /* Use the grid-template-columns property to set each column to 30% */
+  /* You can experiment with different units for the width values */
+  /* Hint: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns */
+}
+
+.section-title {
+  display:flex;
+  justify-content: center;
+}
+
+.single-destination {
+  margin: 5px;
+  overflow: hidden;
+  /* Use the margin property to make some space between the destinations */
+  /* Set the overflow to 'hidden' */
+  /* The overflow CSS shorthand property sets the desired behaviour for an element's overflow 
+    — i.e. when an element's content is too big to fit. In this case, the image is too big too fit. */
+}
+
+img {
+  max-width: 100%;
+  /* Set the max-width property to 100% */
+}
+
+/* Let's take the training wheels off. Finish off the page by adding styles to the remaining blocks */
+
+.testimonial-area {
+    background-color: rgb(75, 73, 73);
+    height: 350px;
+}
+
+.single-testmonial{
+  background-color: white;
+  width : 200px;
+  height:300px;
+  margin : 15px;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.footer >div > h3{
+  margin-left: 15px;
+}
+.footer {
+  background-color: #040E27;
+  color: #fff;
+}
+
+.footer-widget p {
+
+}
+
+.footer-widget a:hover {
+
+}
+
+.footer-widget ul li {
+
+}
+
+.footer-widget a {
+  color: rgb(124, 112, 112);
+}
+
+/* Media Queries */
+
+@media (max-width: 720px) {
+  /* .row{
+    grid-auto-flow: row;
+    grid-template-columns: 50%;
+  } */
+    /* Add some responsive code here */
+    /* Make the destinations stack on top of each other */
+    /* Make the form input stack on top of each other */
+}
